@@ -8,14 +8,16 @@
     <body>
         <nav>
             <a href="index.html">Home</a>
-            <a href="index.html">Diwnload</a>
+            <a href="index.html">Download</a>
             <a href="index.html">Contect</a>
+            <a href="index.html">Service</a>
             <a href="index.html">About me</a>
         </nav>
     </hr>
     <header style="text-align:center ;">
-    <img src="imae/foto-profile.jpg" width="200"height="200"style="border-radius: 50%;"/>
-    <h1>Namaku</h1>
+    <img src="imae/1035858770.png.jpg" width="200"height="200"style="border-radius: 50%;"/>
+   
+    <h1>ANIDYA NUR LATIFA</h1>
     <p>(Web Developer)</p>
 </header>
 <hr/>
@@ -57,7 +59,7 @@
 </table>
 </div>
 <footer style="text-align:center ;">
-<p>Copyriht & copy; 2022 Namaku</p>
+<p>Copyright & copy; 2022 Namaku</p>
 </footer>
 </body>
 
@@ -75,8 +77,9 @@
     <body>
         <nav>
             <a href="index.html">Home</a>
-            <a href="index.html">Diwnload</a>
+            <a href="index.html">Download</a>
             <a href="index.html">Contect</a>
+            <a href="index.html">Service</a>
             <a href="index.html">About me</a>
         </nav>
     </hr>
@@ -101,7 +104,7 @@
     </article>
     <hr>
     <footer style="text-align:center ;">
-        <p>Copyriht & copy; 2022 Namaku</p>
+        <p>Copyright & copy; 2022 Namaku</p>
     </footer>
     </body>
 </html>
@@ -115,27 +118,47 @@
     <body>
         <nav>
             <a href="index.html">Home</a>
-            <a href="index.html">Diwnload</a>
+            <a href="index.html">Download</a>
             <a href="index.html">Contect</a>
+            <a href="index.html">Service</a>
             <a href="index.html">About me</a>
         </nav>
     </hr>
     <div>
         <h1>Kontak Saya</h1>
-        <form>
+        <form action="" method="post" autocomplete="off">
             <lebel for="email">Email</lebel><br/>
             <input type="email" name="email"placeholder="alamat email"/>
             <br />
             <label for="message">Pesan</label><br />
             <textarea name="message"placeholder="Tulis pesan anda..." rows="4"cols="80"></textarea>
             <br />
+            <lebel for="nohp">Masukan No Hp</lebel><br/>
+            <input type="tel" name="nohp"placeholder="nohp"/>
+            <br />
+            <lebel for="slider">Penilaian Website</lebel><br/>
+            <span class="awal">0</span>
+            <input type="range" name="slider"placeholder="slider"
+            min ="0" max ="100" step="5"/>
+            <span class="akhir">100</span>
+            
+            <br />
             <br />
             <input type="submit" value="Kirim" />
         </form>
+        <script>
+            const slider = document.querySelector('#slcider');
+            const awal = document.querySelector('#awal');
+            const akhir = document.querySelector('#akhir');
+            awal.innerHTML =slider.min;
+            akhir.innerHTML =slider.Value;
+            slider.addEventListener('change',function(){
+
+            })
     </div>
     <hr>
     <footer style="text-align:center ;">
-        <p>Copyriht &copy; 2022 Namaku</p>
+        <p>Copyright &copy; 2022 Namaku</p>
     </footer>
     </body>
 
