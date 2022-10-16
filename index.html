@@ -125,6 +125,7 @@
         </nav>
     </hr>
     <div>
+    
         <h1>Kontak Saya</h1>
         <form action="" method="post" autocomplete="off">
             <lebel for="email">Email</lebel><br/>
@@ -133,32 +134,22 @@
             <label for="message">Pesan</label><br />
             <textarea name="message"placeholder="Tulis pesan anda..." rows="4"cols="80"></textarea>
             <br />
-            <lebel for="nohp">Masukan No Hp</lebel><br/>
-            <input type="tel" name="nohp"placeholder="nohp"/>
+            <label for="nohp">Masukan No HP.</label><br />
+            <input name="tel"placeholder="nohp" pattern="(\+62|62|0)8[1-9]{6,9}$" ></input>
             <br />
-            <lebel for="slider">Penilaian Website</lebel><br/>
-            <span class="awal">0</span>
-            <input type="range" name="slider"placeholder="slider"
-            min ="0" max ="100" step="5"/>
-            <span class="akhir">100</span>
-            
+            <label for="angka">Masukan Nilai Web</label><br />
+            <input  type="number" nama="angka"placeholder="..." min="0" max="100"></input>
+            <br />
+            <label for="kodepos">Masukan Kode Pos</label><br />
+            <input type="text name="kodepos" placeholder="masukan kode pos" pattern="^([1-9])[0-9]{4}$"></input>
             <br />
             <br />
             <input type="submit" value="Kirim" />
         </form>
-        <script>
-            const slider = document.querySelector('#slcider');
-            const awal = document.querySelector('#awal');
-            const akhir = document.querySelector('#akhir');
-            awal.innerHTML =slider.min;
-            akhir.innerHTML =slider.Value;
-            slider.addEventListener('change',function(){
-
-            })
     </div>
     <hr>
     <footer style="text-align:center ;">
-        <p>Copyright &copy; 2022 Namaku</p>
+        <p>Copyriht &copy; 2022 Namaku</p>
     </footer>
     </body>
 

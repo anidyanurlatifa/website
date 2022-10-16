@@ -10,17 +10,27 @@
             <a href="index.html">Home</a>
             <a href="index.html">Diwnload</a>
             <a href="index.html">Contect</a>
+            <a href="index.html">Service</a>
             <a href="index.html">About me</a>
         </nav>
     </hr>
     <div>
         <h1>Kontak Saya</h1>
-        <form>
+        <form action="" method="post" autocomplete="off">
             <lebel for="email">Email</lebel><br/>
             <input type="email" name="email"placeholder="alamat email"/>
             <br />
             <label for="message">Pesan</label><br />
             <textarea name="message"placeholder="Tulis pesan anda..." rows="4"cols="80"></textarea>
+            <br />
+            <label for="nohp">Masukan No HP.</label><br />
+            <input name="tel"placeholder="nohp" pattern="(\+62|62|0)8[1-9]{6,9}$" ></input>
+            <br />
+            <label for="angka">Masukan Nilai Web</label><br />
+            <input  type="number" nama="angka"placeholder="..." min="0" max="100"></input>
+            <br />
+            <label for="kodepos">Masukan Kode Pos</label><br />
+            <input type="text name="kodepos" placeholder="masukan kode pos" pattern="^([1-9])[0-9]{4}$"></input>
             <br />
             <br />
             <input type="submit" value="Kirim" />
@@ -33,3 +43,4 @@
     </body>
 
 </html>
+       
